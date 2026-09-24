@@ -1,0 +1,24 @@
+dataset: ???
+category: ???
+num_points: 2048
+batch_size: 12
+max_epoch: 500
+workers: 12
+max_dis: 0.3
+lr: 0.0001
+message: ''
+no_bbox: true
+seed: 6788
+use_pose_aug: false
+no_eikonal_loss: false
+scale_aug_range: 0.2
+inscode_size: 64
+catcode_size: 128
+num_catcodes: 32
+eikonal_lambda: 0.1
+catcode_regularization_lambda: 0.00005
+inscode_regularization_lambda: 0.0001
+dataset_root: ???
+joint_from_inscode: false
+model:
+  package: models.sdf_model_V07

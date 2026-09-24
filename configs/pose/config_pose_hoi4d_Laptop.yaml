@@ -1,0 +1,12 @@
+dataset:
+  package: 'dataloader.hoi4d_dataset.hoi4d_dataset_arti'
+  object: 'HOI4D'
+  data_root: ???
+  cache_root: ???
+
+category: 'C3'
+
+sdf:
+  misc_path: ???
+
+resume: 

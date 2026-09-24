@@ -1,0 +1,7 @@
+dataset: hoi4d
+category: C14
+
+inscode_regularization_lambda: 0.01
+inscode_size: 96
+
+joint_from_inscode: true

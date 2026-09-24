@@ -1,0 +1,59 @@
+
+dataset:
+  base_aug_method: 'free'
+  base_aug_param:
+    maxd: 60.0
+    maxt: 0.010
+
+  enable_paug: False
+
+  shape_aug_scale: 0.1
+  noise_aug_scale: 0.0001
+
+  num_points: 2048
+  num_workers: 24
+  train_bs: 48
+  val_bs: 2
+
+model:
+  package: models.model_V10
+  name: base_pem_rel_trans
+
+  use_pretrain: true
+  reverse_on_training: false
+
+  glow:
+    noise_scale: 0.00
+    hidden_features: 512
+    context_features: 384
+    num_layers: 4
+    num_blocks: 2
+
+  mamba:
+    trans_dim: 384
+    depth: 12
+    drop_path_rate: 0.2
+    cls_dim: 1024
+    num_heads: 6
+    group_size: 32
+    num_group: 128
+    encoder_dims: 384
+    bimamba_type: "v4"
+    center_local_k: 4
+    ordering: False
+    label_smooth: 0.0
+    lr_ratio_cls: 1.
+    lr_ratio_lfa: 1.
+
+category: 
+eval_interval: 3
+max_epoch: 300
+lr: 0.0001
+
+weight_cls: 2.0
+weight_gen: 1.0
+
+sdf:
+  misc_path: 
+
+

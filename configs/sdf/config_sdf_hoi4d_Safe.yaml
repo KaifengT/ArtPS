@@ -1,0 +1,4 @@
+dataset: hoi4d
+category: C6
+
+inscode_regularization_lambda: 0.02
